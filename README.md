@@ -1,4 +1,5 @@
 scripts
 =======
 
-custom scripts
+Custom scripts:
+auto-extract
