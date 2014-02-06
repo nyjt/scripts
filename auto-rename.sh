@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -z $1 ]
+if [ -z "$1" ]
 then
   echo 'You need to give the first argument as a pattern of files you want to rename.'
   exit
@@ -17,7 +17,7 @@ fi
 for i in `ls -1 $1`
 do
   echo -n "Renaming $i -> "
-  new_name=`echo $i | sed "s/$1/$2/g"`
+  new_name=`echo $i | sed "s/$2/$3/g"`
   mv $i $new_name
   echo $new_name
 done
